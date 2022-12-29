@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main">
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <form enctype="multipart/form-data" class="form" action="/admin_book_edit/{{id}}" role="form" method="post">
+                    <header align="center"
+                            style="color:#009f4d;"
+                            class="h2 text-uppercase font-weight-bold">Edit Book
+                    </header>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Book Name</label>
+                                <input type="text" class="form-control" id="book_name" value="{{book.book_name}}" name="book_name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Author</label>
+                                <input type="text" class="form-control" id="author" value="{{book.author}}" name="author">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Prize</label>
+                                <input type="number" class="form-control" id="prize" value="{{book.prize}}" name="prize">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group required">
+                                <label class='control-label'>Description</label>
+                                <textarea class="form-control" name="description" id="description" rows="5" cols="50">{{book.description}}</textarea>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 text-right">
+                        <button type="submit" style="background-color:#009f4d;color:white;margin-left:20px;"
+                                class="btn ink-reaction">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mt-5">
+
+</div>
+{% endblock %}

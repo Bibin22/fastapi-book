@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FastAPI</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+
+    <!-- Icon font -->
+    <link rel="stylesheet" href="{{url_for('static', path='plugins/tblue-font/style.css' )}}">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{{url_for('static', path='plugins/bootstrap/css/bootstrap.min.css' )}}">
+
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{{url_for('static', path='plugins/animate/animate.css')}}">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{{url_for('static', path='plugins/slick/slick.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static', path='plugins/slick/slick-theme.css' )}}">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{url_for('static', path='css/style.css' )}}">
+
+    <!-- counterup script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{{url_for('static', path='bundles/datatables/datatables.min.css' )}}">
+    <link rel="stylesheet"
+          href="{{url_for('static', path='bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css' )}}">
+</head>
+
+<body id="body">
+
+<section class="menu">
+    <nav class="navbar navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <h2 class="menu-title">Main Menu</h2>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse text-center">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown ">
+                        <a href="/admin_book_list">Home</a>
+                    </li>
+
+                    <li class="dropdown full-width dropdown-slide">
+                        <a href="/admin_book_list">Books</a>
+                    </li>
+
+
+
+                    <li class="dropdown ">
+                        <a href="/admin_book_add">Add Book</a>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="/">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+</section>
+
+
+{% block content %}
+
+{% endblock %}
+
+<!-- Counterup -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="{{url_for('static', path='js/jquery.counterup.min.js' )}}"></script>
+<!-- Main jQuery -->
+<script src="{{url_for('static', path='plugins/jquery/dist/jquery.min.js' )}}"></script>
+<!-- Bootstrap 3.1 -->
+<script src="{{url_for('static', path='plugins/bootstrap/js/bootstrap.min.js' )}}"></script>
+<!-- Bootstrap Touchpin -->
+<script src="{{url_for('static', path='plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js' )}}"></script>
+<!-- Instagram Feed Js -->
+<script src="{{url_for('static', path='plugins/instafeed/instafeed.min.js' )}}}"></script>
+<!-- Video Lightbox Plugin -->
+<script src="{{url_for('static', path='plugins/ekko-lightbox/dist/ekko-lightbox.min.js' )}}"></script>
+<!-- Count Down Js -->
+<script src="{{url_for('static', path='plugins/syo-timer/build/jquery.syotimer.min.js' )}}"></script>
+
+<!-- slick Carousel -->
+<script src="{{url_for('static', path='plugins/slick/slick.min.js')}}"></script>
+<script src="{{url_for('static', path='plugins/slick/slick-animation.min.js')}}"></script>
+
+<!-- Google Mapl -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script type="text/javascript" src="{{url_for('static', path= 'plugins/google-map/gmap.js' )}}"></script>
+
+<!-- Main Js File -->
+<script src="{{url_for('static', path='js/script.js' )}}"></script>
+
+<script src="{{url_for('static', path='backend/vendor/datatables/jquery.dataTables.min.js' )}}"></script>
+<script src="{{url_for('static', path='backend/vendor/datatables/dataTables.bootstrap4.min.js' )}}"></script>
+<script src="{{url_for('static', path='backend/js/demo/datatables-demo.js' )}}"></script>
+
+<script src="{{url_for('static', path='bundles/sweetalert/sweetalert.min.js' )}}"></script>
+<script src="{{url_for('static', path='js/page/sweetalert.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main">
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <form class="form" role="form" action="/admin_registration/" method="post">
+                    <header align="center"
+                            style="color:#009f4d;"
+                            class="h2 text-uppercase font-weight-bold">Registration
+                    </header>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Name</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>User Name</label>
+                                <input type="text" class="form-control" name="username" id="username" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Phone</label>
+                                <input type="number" maxlength="10" class="form-control" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group required">
+                                <label class='control-label'>Password</label>
+                                <input type="password" name="password" class="form-control" autocomplete="new-password"
+                                       required id="password"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-right">
+                        <a href="/login/" style="color:#009f4d;">Login</a>
+                        <button type="submit" style="background-color:#009f4d;color:white;margin-left:20px;"
+                                class="btn ink-reaction">Submit
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mt-5">
+
+</div>
+{% endblock %}
